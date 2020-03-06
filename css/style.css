@@ -1,0 +1,31 @@
+@import "card.css";
+@import "blogpost.css";
+@import "img.css";
+
+.container{
+    display:grid;
+    grid-template-rows: 20vh 20vh 20vh;
+    border: 1px solid yellowgreen;
+    padding: 1%;
+    margin: 10px;
+    justify-content: center;
+}
+
+.box{
+    display:flex;
+    flex-flow: wrap;
+    border: 1px solid gray;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}
+@media(min-width:600px){
+    .container{
+            display:grid;
+            grid-template-columns: 30vw 30vw;
+            grid-template-rows: 200px 200px 200px;
+            border: 1px solid yellowgreen;
+            justify-content: center;
+    }
+}
